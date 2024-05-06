@@ -1,13 +1,14 @@
-const arr = [2, 9, 0, 5, 4, 1, 7, 8];
+const arr = [0, 9, 2, 5, 4, 0, 1, 7, 8];
 
 function selection(arr) {
   const sortedArray = [];
 
-  for (let i = 0; i <= arr.length; i++) {
-    sortedArray.push(Math.min(...arr));
-    arr.splice(arr.indexOf(Math.min(...arr)), 1);
+  while (arr.length > 0) {
+    let minimum = Math.min(...arr);
+    sortedArray.push(minimum);
+    arr.splice(arr.indexOf(minimum), 1);
   }
-  return sortedArray
+  return sortedArray;
 }
 
-console.log(selection(arr))
+console.log(selection(arr));
