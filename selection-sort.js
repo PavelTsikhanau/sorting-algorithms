@@ -4,7 +4,7 @@ function selectionSort(arr) {
   const sortedArray = [];
 
   while (arr.length > 0) {
-    let minimum = Math.min(...arr);
+    const minimum = Math.min(...arr);
     sortedArray.push(minimum);
     arr.splice(arr.indexOf(minimum), 1);
   }
