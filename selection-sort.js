@@ -1,6 +1,6 @@
 const arr = [0, 9, 2, 5, 4, 0, 1, 7, 8];
 
-function selection(arr) {
+function selectionSort(arr) {
   const sortedArray = [];
 
   while (arr.length > 0) {
